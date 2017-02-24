@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="120dp"
+    android:paddingBottom="@dimen/spacing_medium"
+    android:paddingLeft="@dimen/spacing_medium"
+    android:paddingRight="@dimen/spacing_medium"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo2"
+        android:id="@+id/imageView3"
+        android:layout_weight="0.38" />
+
+    <ImageView
+        android:id="@+id/nav_header_user_picture"
+        android:contentDescription="@string/user_profile_picture"
+        tools:src="@drawable/user_picture_placeholder"
+        android:layout_alignParentLeft="true"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="@dimen/spacing_medium" />
+
+    <TextView
+        android:id="@+id/nav_header_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_medium_small"
+        android:layout_alignTop="@id/shot_author_picture"
+        tools:text="Username"
+        style="@style/AppTheme.TextView.2.White"/>
+
+    <TextView
+        android:id="@+id/nav_header_logout"
+        android:text="Log out"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-8dp"
+        style="@style/AppTheme.TextView.Clickable.1.White"/>
+
+</LinearLayout>
+

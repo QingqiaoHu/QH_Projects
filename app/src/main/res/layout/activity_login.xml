@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="387dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/tppple"
+        android:contentDescription="@string/activity_login_icon"
+        android:layout_weight="0.36"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:src="@mipmap/ic_login"
+        android:contentDescription="@string/activity_login_icon"/>
+
+
+    <TextView
+        android:id="@+id/activity_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_login_btn_text"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:textStyle="italic"
+        style="@style/AppTheme.TextView.Clickable.2.White"/>
+
+</LinearLayout>
